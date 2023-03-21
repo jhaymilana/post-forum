@@ -18,6 +18,7 @@ body {
 :root {
   --app-background: #181b2d;
   --app-white: #fff;
+  --app-black: #000;
   --app-blue: #3c57ff;
   --app-blue-hover: #364ee6;
   --app-background-info: #2a2f4e;
@@ -80,7 +81,7 @@ nav ul li a:hover {
   margin-top: 50px;
   padding: 15px;
   width: 720px;
-  height: 320px;
+  height: 280px;
 }
 
 textarea {
@@ -88,7 +89,7 @@ textarea {
   resize: none;
   color: var(--app-white);
   width: 700px;
-  height: 250px;
+  height: 210px;
   font-size: 18px;
 }
 
@@ -107,5 +108,14 @@ textarea {
   height: 27px;
   font-size: 17px;
   border-radius: 3px;
-  margin-left: 334px;
+  margin-left: 593px;
+}
+
+.posts {
+  background-color: var(--app-white);
+  color: var(--app-black);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 720px;
 }
