@@ -19,6 +19,53 @@ body {
   --app-blue: #3c57ff;
   --app-blue-hover: #364ee6;
   --app-background-info: #2a2f4e;
+  --app-header: #0f111c;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Header
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+  background-color: var(--app-header);
+  font-size: 0px;
+  height: 50px;
+  line-height: 50px;
+}
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  color: var(--app-white);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  word-spacing: 2.5px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: var(--app-white);
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px #000;
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--app-blue-hover);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
