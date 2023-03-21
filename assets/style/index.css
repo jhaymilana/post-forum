@@ -7,6 +7,8 @@ body {
 .container {
   margin-inline: auto;
   width: min(100% - 30px, 1080px);
+  display: grid;
+  place-items: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -71,3 +73,39 @@ nav ul li a:hover {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Main
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.forum {
+  background-color: var(--app-header);
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 15px;
+  width: 720px;
+  height: 320px;
+}
+
+textarea {
+  background-color: transparent;
+  resize: none;
+  color: var(--app-white);
+  width: 700px;
+  height: 250px;
+  font-size: 18px;
+}
+
+.inputs {
+  margin-top: 10px;
+}
+
+.file {
+  color: var(--app-white);
+}
+
+.post {
+  background-color: var(--app-blue);
+  color: var(--app-white);
+  width: 67px;
+  height: 27px;
+  font-size: 17px;
+  border-radius: 3px;
+  margin-left: 334px;
+}
