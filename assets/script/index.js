@@ -31,4 +31,5 @@ function createPost() {
 
 post.addEventListener('click', function() {
   createPost();
+  text.value = '';
 });
