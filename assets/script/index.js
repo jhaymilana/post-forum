@@ -52,6 +52,15 @@ class User {
     this.#userName = userName;
     this.#email = email;
   }
+
+  getInfo() {
+    return `
+    ${this.#id}
+    ${this.#name}
+    ${this.#userName}
+    ${this.#email}
+    `;
+  }
 }
 
 class Subscriber extends User {
@@ -63,6 +72,24 @@ class Subscriber extends User {
     super(id, name, userName, email);
     this.#pages = pages;
     this.#groups = groups;
-    this.#canMonotize = canMonotize
+    this.#canMonotize = canMonotize;
+  }
+
+  getInfo() {
+    return `
+    ${super.id}
+    ${super.name}
+    ${super.userName}
+    ${super.email}
+    ${this.#pages}
+    ${this.#groups}
+    ${this.#canMonotize}
+    `;
   }
 }
+
+const newSubscriber = new Subscriber (
+  1206, 'Jayvee Milana', 'JhayMilana', 'jmmilana12@gmail.com', 'gym', 'gymrats', 'no'
+  );
+
+  

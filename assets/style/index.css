@@ -125,7 +125,7 @@ textarea {
   top: 100px;
   right: 300px;
   width: 250px;
-  height: 350px;
+  height: 280px;
   background-color: var(--app-header);
   color: var(--app-white);
   border-radius: 5px;
@@ -134,4 +134,8 @@ textarea {
 
 .hidden {
   visibility: hidden;
+}
+
+p {
+  margin-top: 5px;
 }
